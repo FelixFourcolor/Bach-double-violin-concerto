@@ -1,0 +1,176 @@
+instrument: bit|guitar
+division: L
+dynamic: 2;
+sustain: false
+notes: [
+  1 |, c'd'eb'f'g, c^, b, g, d, f, 
+  2 |, e, c, {note: bb:2b., sustain: 3}, a'g'a, f,
+  3 |, d, f, ab, c, b_, g, c, f,
+  4 |, {note: eb:2b, sustain: 2}, {note: d:2b, sustain: 2}, 
+  c' b_' c' d' e' fs' g' a',
+  5 |, bb' a' g' a' bb' a' bb' c^' d^, a, {note: d^:2b
+  +1, sustain: 3}, c^' b' a' b' g' a' b' c^, g, {note: c^:2b
+  +1, sustain: 3}, bb' a' bb' c^' d^' eb^' c^' d^' eb^' d^' c^' bb' a' g' fs',
+  8 |, g, {note: g^:2b, sustain: 2}, fs^, g^, 
+  {level: -1}, g' fs' g' a' bb' g',
+  9 |, a' g' a' bb' a' b' c^' a' b' a' b' c^' b' c^' d^' b',
+  {level: -1},
+  10|, c^, g^, R, eb^, d^' c^' b' a' b' g' a' b',
+  11|, c^, g, c^' e^' f^' g^' c^' bb' c^' d^' c^' eb^' d^' c^',
+  12|, d^, d, {note: d^:2b +1, sustain: 3}, c^' b' a' g' f' eb' d',
+  13|, c' bb' ab' g' f' eb' d' f' eb, 
+  {level: +1}, c, {note: g:2b +1, sustain: 3},
+  {level: +1}, a'b'c^'d^, f^, e^, c^, g, bb,
+  15|, a, f, {note: eb^:2b., sustain: 3}, d^'c^'d^, bb,
+  16|, g, bb, db^, f, e, c^, f, bb,
+  17|, {note: ab:2b, sustain: 2}, {note: g:2b, sustain: 2}, {note: f:2b, sustain: 2}, R, d,
+  18|, g, g_, {note: g:2b +1, sustain: 3}, fs' g' a' b' c^' d^' b',
+  19|, c^' ab' g' f' g' e' f' g' c, f, {note: c^:2b
+  +1b, sustain: 3}, {note: b' c^' d^' eb^' f^:1b., sustain: 2}, d^' eb^' f^' g^, {note: d^:2b, sustain: 2},
+  {note: c^:2b, sustain: 2}, b, c^:2b, R:...,
+  22||,
+  23||,
+  24||,
+  {
+    instrument: [~, harp|flute],
+    transpose: {auto: [true]}, 
+    dynamic: [~, 1], 
+    sustain: [~, 2],
+    # R1 is -8, but that's because R1 played alone. 
+    # R2 needs to be slightly louder
+    level: [~, -6]
+  },
+  25|, R:8b -3, f' eb' d',
+  26|, eb, g^, d, f^, c' f^' eb^' d^' c^' bb' ab' g',
+  27|, ab, c^^, g, bb^, f' bb^' ab^' g^' f^' eb^' d^' c^',
+  28|, d^' ab^' g^' f^' g^' d^' c^' b' c^' g^' f^' eb^' f^' c^' b' a',
+  29|, b' f^' eb^' d^' eb^' d^' c^' eb^' d^' c^' b' a', {note: g:2b, sustain: [4]},
+  { 
+    instrument: [~, $delete],
+    transpose: {auto: false},
+    sustain: false,
+    level: [-6]
+  },
+  30|, R, c^'d^'eb^, {note: c:1b., sustain: 2}, bb_'a_'g_'a_, {note: f:1b
+  +1b, sustain: 3}, bb'c^'d^, {note: bb_:1b., sustain: 2}, ab_'g_'f_'g_, {note: eb:1b
+  +1, sustain: 3}, f' eb' d' c' bb_' a_' g_' f_' g' f' eb' d' c' b_' a_' g_, 
+  {level: [+4]}, ab'g'ab, eb, f, bb'ab'bb, f,
+  {
+    level: [$reset],
+    instrument: [~, harp],
+  },
+  34|, {note: g' bb' c^' d^' eb^' f^' g^' eb^' a' eb^' g^:1b., sustain: 2}, eb^'c^'a',
+  35|, {note: fs^' a' bb' c^' d^' eb^' f^' d^' g' d^' f^:1b., sustain: 2}, d^'b'g',
+  { instrument: [~, $delete] },
+  36|, eb^, c^, g, {note: g^:2b, dynamic: 3;2, sustain: 2}, {note: d^' bb' g:2b
+  +1b, sustain: 3, level: -1}, eb, c, {note: c^:2b, dynamic: 3;, sustain: 2}, 
+  a' fs' d' c' bb_' a_', 
+  {level: $reset},
+  {
+    level: [~, -11],
+    sustain: [~, 2],
+    instrument: [~, harp]
+  },
+  38|, bb_, d^, a_, c^, g_' c^' bb' a' g' f' eb' d',
+  39|, eb, g^, d, f^, c' f^' eb^' d^' c^' bb' a' g',
+  40|, a' eb^' d^' c^' d^' a' g' fs' g' d^' c^' bb' c^' g' fs' e',
+  41|, {note: fs' c^' bb' a' bb' a' g' bb' a' g' fs' e' d:2b, sustain: 2},
+  {
+    level: [-6],
+    instrument: [~, $delete]
+  },
+  42|, R' bb_' g_' bb_' c' a_' fs_' a_' bb_, g_, {note: g:2b
+  +1, sustain: 3}, eb' c' eb' f' d' b_' d' eb, c, {note: eb^:2b
+  +1, sustain: 3, dynamic: 3;2}, c'bb_'a_'bb_, {note: d^:1b., sustain: 2, dynamic: 3;2}, bb_'a_'g_'a_, {note: c^:1b., sustain: 2, dynamic: 3;2}, a_'g_'fs_'g_, {note: g:1b., sustain: 2},
+  {level: +3}, bb' a' g' a', {level: +2}, c^' bb' a',
+  {level: $reset},
+  46|, bb' a' g' a' bb' a' bb' c^' d^, a, {note: d^:2b
+  +1, sustain: 3}, c^' b' a' b' g' a' b' c^, g, {note: c^:2b
+  +1, sustain: 3}, bb' a' bb' c^' d^' eb^' c^' d^' eb^' d^' c^' bb' a' g' fs',
+  49|, g, {note: g^:2b, sustain: 2}, fs^, g^,
+  fs^' e^' d^' (c^;a)' (bb;g)' (a;fs)',
+  {
+    instrument: [~, harp],
+    dynamic: [~, 1], 
+    sustain: [~, 2],
+    level: [~, -4]
+  },
+  50|, g'bb'd^'g^', a'c^'d^'fs^', g^'d^'bb'g', fs'a'c^'d^',
+  51|, g'bb'd^'g^', a'c^'d^'fs^', g^'d^'bb'g', R'ab'g'f',
+  {
+    level: -4
+  },
+  52|, eb, c^, f, d^, eb, c^, d, b,
+  53|, eb, c^, g, d^, eb^, c^, R,
+  {note: c^:1b
+  +1b, sustain: 2}, bb'a', {note: b:2b +1b, sustain: 3}, g, c, bb,
+  {
+    level: [+2]
+  },
+  55|, ab' g' f' g' ab' g' ab' bb' c^, g, {note: c^:2b
+  +1, sustain: 3}, bb' a' g' a' f' g' a' bb, f, {note: bb:2b
+  +1, sustain: 3}, ab' g' ab' bb' c^' db^' bb' c^' db^' c^' bb' ab' g' f' e',
+  58|, f, {note: f^:2b, sustain: 2}, e^, {note: f^:2b, sustain: 2},
+  {level: $reset},
+  { 
+    level: [-7, -8],
+  },
+  R'd'c'bb_',
+  59|, ab_, f, bb_, g, ab_, f, g_, e,
+  60|, ab_, f, c, g, ab, f,
+  {
+    level: [$reset, -3],
+  },
+  # down an octave from the score
+  R' (eb;c)' (db;bb_)' (c;a_)',
+  61|, bb_'db'f'bb', c'eb'f'a', bb'f'db'bb_', a_'c'eb'f',
+  62|, bb_'db'f'bb', c'eb'f'a', bb'f'db'bb_',
+  # back to the score
+  {level: $reset},
+  {
+    instrument: [bit|guitar, harp|flute|null],
+    level: [~, -6;-10],
+    sustain: {value: [-2, 2], max: 3},
+  },
+  R, db^:1b
+  +1b, eb, db^:2b., eb, ab_, c^:1b
+  +1b, c, bb:2b., c, 
+  {level: [-3]},
+  f_'ab_'g_'a_',
+  65|, b_'a_'b_'c', b_'c'd'b_', c'b_'c'd', eb'd'eb'f',
+  66|, g'f'g'ab', g'ab'bb'g', ab'db'c'bb_', 
+  level: [+2], c'eb'ab:1b
+  +1b, {level: [$reset]}, ab, f, d^:2b, g, eb, c^:1b
+  +1b, f, d, b, c^:2b +1, bb' ab' g',
+  69|, ab' c' d' e' f' g' ab' f' bb_' f', {note: ab:1b., sustain: 2}, f' d' bb_',
+  70|, g', bb_' c' d' eb' f' g' eb' ab_' eb', {note: gb:1b., sustain: 2}, eb' c' ab_',
+  71|, f, bb'ab'bb, f, g, c^'bb'c^, g,
+  level: [-3],
+  72|, ab' bb' ab' g' f' eb' db' c' bb_' c^' bb' ab' g' f' eb' db',
+  73|, c, ab'bb'c^, {note: ab:1b., sustain: 2}, g' f' eb' d, d^:1b
+  +1b, g'ab'bb, {note: g:1b., sustain: 2}, f' e' d' c:2b
+  +1, level: [$reset],
+  f'ab'c^'f^'c^'ab'f', c'eb'g'c^'eb^'c^'g'eb',
+  76|, c'd'f'ab'd^'ab'f'c', b_'d'f'g'd^, R:...,
+  77||,
+  78||,
+  79||,
+  transpose: { auto: [true] }, 
+  80|, R:8b -3, f'eb'd',
+  81|, eb, g^, d, f^, c' f^' eb^' d^' c^' bb' ab' g',
+  82|, ab, c^^, g, bb^, f' bb^' ab^' g^' f^' eb^' d^' c^',
+  83|, d^' ab^' g^' f^' g^' d^' c^' b' c^' g^' f^' eb^' f^' c^' b' a',
+  84|, b' f^' eb^' d^' eb^' d^' c^' eb^' d^' c^' b' a', {note: g:2b, sustain: [4]},
+  { 
+    instrument: $reset,
+    level: $reset,
+    sustain: {value: $reset, max: $reset}
+  },
+  85|, R, g, c^, eb^, d^, b, {note: g:2b
+  +1, sustain: 3}, f'e'd'e'c'd'e'f, c, {note: f:2b
+  +1, sustain: 3}, eb'd'eb'f'g'ab'f'g'ab'g'f'eb'd'c'b_',
+  sustain: -2,
+  88|, c:2, {note: [c^:3, {note: c^:6, delay: 1}], dynamic: 3;}, b:5,
+  level: ~:2; -1; -2; -3; -4; -5; -6; -7; -8; -9; -10:...,
+  {note: c^:16, sustain: 12}
+]

@@ -1,0 +1,178 @@
+instrument: bass|harp
+sustain: true
+level: -4; -8:...
+transpose: +12
+notes: [
+  1 |, c, c^, bb, a, g' f' g' a' g' f' eb' d',
+  2 |, c' b_' c' d' c' bb_' a_' g_' f_:4b
+  +4b +1b, eb_'d_'eb_, a_, 
+  4 |, g_, f_, g_, g_, c_, c, bb_, a_,
+  5 |, g_, g, f, eb, d' c' d' eb' d' c' bb_' a_',
+  6 |, g_' fs_' g_' a_' g_' f_' eb_' d_' c_' b_' c' d' c' bb_' a_' g_',
+  7 |, fs_:2b, R, c:2b, bb_'a_'bb_, eb,
+  8 |, d, c, d, d_, g_:2b, R:...,
+  9||,
+  10|, c'd'eb'f'g, c^, b, g, d, f, 
+  11|, e, c, bb:3b, a'g'a, f,
+  12|, d, f, ab, c, b_, g, c, f,
+  13|, eb:2b, {note: d:2b, trill: eb, dynamic: 2, level: -4;}, c' bb_' c' d' eb' f' g' a',
+  14|, b' a' g' a' b' g' a' b' c^:4b 
+  +1, bb' a' g' a' f' g' a' bb:4b
+  +1, ab' g' ab' bb' c^' db^' bb' c^' db^' c^' bb' ab' g' f' e',
+  17|, f' eb' d' c' b_' g_' c' bb_' a_' c' b_' c' d' eb' f' d',
+  18|, eb' d' c' d' eb' d' eb' f' g:4b
+  +1, f' e' d' e' c' d' e' f:4b
+  +1, eb' d' eb' f' g' ab' f' g' ab' g' f' eb' d' c' b_',
+  21|, c, ab_, f_, g_, c, R:...,
+  {level: -3},
+  22|, c, R, g_, R, c_, R:...,
+  23|, f, R, c, R, f_, R:...,
+  {
+    instrument: [~, harp],
+    sustain: [true, false],
+    level: [~, -2],
+    transpose: [~, -12], # by transposing -12, harp is still one octave up
+  },
+  24|, bb, R, eb, R, ab, R, d, R,
+  25|, g, R, c, R, g, d, b_, g_,
+  {
+    level: +1,
+    instrument: [~, $delete]
+  }, 
+  26|, c, R, g_, R, c_, R:...,
+  27|, f, R, c, R, f_, R:...,
+  {
+    instrument: [~, harp],
+    level: [~, +1],
+  },
+  28|, bb, R, eb, R, ab, R, d, R,
+  29|, g, R, c, R, g, 
+  {level: $reset}, d, b_, g_,
+  {
+    instrument: [~, $delete]
+  },
+  30|, c, R:3b, f, c, a_, f_,
+  31|, bb_, R:3b, eb, bb_, g_, eb_,
+  32|, ab_, R, a_, R, bb_, R, b_, R,
+  33|, c, R, ab_, R, d, R, bb_, R,
+  34|, eb, R:2b, c, a_, a'bb'c^, a,
+  35|, d, R:2b, b_, g_, g'a'b, g,
+  36|, c, R:2b,
+  {level: +2}, c^, bb, R:2b, bb_,
+  37|, eb, R:2b, eb_, d_, R:...,
+  {level: $reset},
+  {level: -3},
+  38|, g_, R, d, g, R:...,
+  39|, c, R, g, R, c^, R:...,
+  {
+    instrument: [~, harp|bass],
+    level: [~, -2],
+  },
+  40|, f, R, bb_, R, eb, R, a_, R,
+  41|, d, R, g_, R, d, a_, fs_, d_,
+  {
+    level: +1,
+    instrument: [~, $delete]
+  },
+  42|, g_, R, d, g, R:...,
+  43|, c, R, g, R, c^, R:...,
+  {
+    instrument: [~, harp],
+    level: [~, +1],
+  },
+  44|, f, R, bb_, R, eb, R, a_, R,
+  45|, d, R, g_, R, d,
+  {
+    level: $reset,
+    instrument: [~, $delete]
+  }, 
+  d_, fs_, d_,
+  46|, g_, g, f, eb, d' c' d' eb' d' c' bb_' a_',
+  47|, g_' fs_' g_' a_' g_' f_' eb_' d_' c_' b_' c' d' c' bb_' a_' g_',
+  48|, fs_:2b, R, c:2b, bb_'a_'bb_, eb,
+  49|, d, c, d, d_, g_,
+  {
+    level: -2,
+    instrument: [~, harp],
+  },
+  g, fs, d,
+  50|, g, R:...,
+  51|, R, g, fs, d, g, g_'a_'bb_, b_,
+  52|, c, R:...,
+  53|, R, c, b_, g_, c, c'd'eb, c,
+  54|, g:2b, R:...,
+  {level: $reset},
+  {
+    instrument: [~, didgeridoo],
+    level: [+6;+10:..., -6],
+    transpose: [-12, ~]
+  },
+  55|, f'g'ab'bb'c^, f^, eb^, c^, g, bb,
+  56|, a, f, eb^:2b., d^'c^'d^, bb,
+  57|, g, bb, db^, f, e, c^, f, db^,
+  58|, c^, bb, c^, c, f,
+  {
+    level: $reset,
+    transpose: [$reset],
+    instrument: [~, harp|bass],
+  },
+  level: -2, f, e, c,
+  59|, f, R:...,
+  60|, R, f, e, c, f, f_'g_'ab_, a_,
+  61|, bb_, R:...,
+  62|, R, bb, a, f, bb, bb_'c'db, bb_,
+  63|, eb, R:2b, 
+  level: [+1, -1],
+  {note: eb, transpose: [-12]}, ab_, R:2b, ab_'bb_',
+  64|, c, R:2b, {note: c, transpose: [-12]}, f_, R:2b, {note: d, transpose: [-12]},
+  65|, g_, R:2b, {note: g, transpose: [-12]}, c, R:2b, c'db',
+  66|, eb, R:2b, {note: eb, transpose: [-12]}, ab_, R:2b, ab'g',
+  67|, f, R:2b, d, eb, R:2b, c,
+  68|, d, R:2b, g_, c, {note: c, transpose: [-12]}, c, eb,
+  69|, f, R:3b, bb, f, d, bb_,
+  70|, eb, R:3b, ab, eb, c, ab_,
+  71|, db, R, d, R, eb, R, e, R,
+  72|, f, R, db, R, g, R, eb, R,
+  73|, bb, R:2b, f, db, transpose: [-12], d'eb'f, d, 
+  74|, g, transpose: [$reset], R:2b, e, c, transpose: [-12], c'd'e, c,
+  75|, f, 
+  {
+    transpose: $reset, 
+    level: $reset, 
+    instrument: $reset,
+  }, R:2b,
+  level: +2,
+  f, eb, R:2b, eb_,
+  76|, ab_, R:2b,ab, g, R:...,
+  level: $reset,
+  level: -3,
+  77|, c, R, g_, R, c_, R:...,
+  78|, f, R, c, R, f_, R:...,
+  {
+    instrument: [~, harp|bass],
+    transpose: [~, -12],
+    level: [~, -2],
+  },
+  79|, bb, R, eb, R, ab, R, d, R,
+  80|, g, R, c, R, g, d, b_, g_,
+  {
+    level: +1,
+    instrument: [~, $delete]
+  }, 
+  81|, c, R, g_, R, c_, R:...,
+  82|, f, R, c, R, f_, R:...,
+  {
+    instrument: [~, harp],
+    level: [~, +1],
+  },
+  83|, bb, R, eb, R, ab, R, d, R,
+  84|, g, R, c, R, g, level: $reset, g_, b_, g_,
+  instrument: [$reset, $delete],
+  85|, c' b_' c' d' eb' d' eb' f' g' f' g' ab' g' f' e' d',
+  86|, c' b_' c' d' c' bb_' a_' g_' f_' e_' f_' g_' f_' eb_' d_' c_',
+  87|, bb_:2b, R, 
+  level: +2, f:2b, eb'd'eb, ab,
+  88|, g:2, f:3, 
+  {note: g:6, delay: 1, sustain: -2}, {note: g_:5, sustain: -1}, 
+  {note: c_:16, instrument: didgeridoo, level: -4:2; -5; -6; -7; -8:...,  sustain: 8}
+]

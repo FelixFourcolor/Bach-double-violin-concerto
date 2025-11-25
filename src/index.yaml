@@ -1,0 +1,16 @@
+time: 16
+beat: 2
+delay: 2
+transpose: -1
+trill: { style: alt }
+voices:
+  - - file://./pianos/right-hand-I.yaml
+    - file://./pianos/right-hand-II.yaml
+
+  - - file://./pianos/left-hand-I.yaml
+    - file://./pianos/left-hand-II.yaml
+
+  - - file://./orchestra/violin-I.yaml
+    - file://./orchestra/violin-II.yaml
+    - file://./orchestra/viola.yaml
+    - file://./orchestra/continuo.yaml
