@@ -170,7 +170,7 @@ notes: [
   +1, sustain: 3}, f'e'd'e'c'd'e'f, c, {note: f:2b
   +1, sustain: 3}, eb'd'eb'f'g'ab'f'g'ab'g'f'eb'd'c'b_',
   sustain: -2,
-  88|, c:2, {note: [c^:3, {note: c^:6, delay: 1}], dynamic: 3;}, b:5,
+  88|, c:2, {note: c^:9, dynamic: 3;}, b:5,
   level: ~:2; -1; -2; -3; -4; -5; -6; -7; -8; -9; -10:...,
   {note: c^:16, sustain: 12}
 ]

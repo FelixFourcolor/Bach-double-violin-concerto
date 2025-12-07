@@ -109,8 +109,7 @@ notes: [
   85|, R, g, c^, eb^, d^, b, g:2b
   +1, f' e' d' e' c' d' e' f:4b
   +1, eb' d' eb' f' g' ab' f' g' ab' g' f' eb' d' c' b_',
-  88|, c:2, {note: [c^:3,
-  {note: c^:6, delay: 1}], sustain: -2}, {note: b:5, sustain: -2}, 
+  88|, c:2, {note: c^:9, sustain: -2}, {note: b:5, sustain: -2}, 
   level: ~:2; -1; -2; -3; -4; -5; -6; -7; -8; -9; -10:...,
   {note: c^:16, sustain: 12}
 ]

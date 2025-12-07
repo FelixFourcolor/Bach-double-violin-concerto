@@ -116,9 +116,8 @@ notes: [
   86|, c, g_, g, c, R, c^, c, f,
   87|, R, ab, d, f, R, b_, g_, c,
   level: $reset,
-  88|, g:2, {note: [ab:3, 
-  {note: ab:6, delay: 1}], level: [+6], sustain: -2},
-  {note: [g:2, f:3],  level: [+12], sustain: [true, false]},
+  88|, g:2, {note: ab:9, level: [+6], sustain: -2},
+  {level: [+12], sustain: [true, false]}, g:2, f:3, {level: $reset, sustain: $reset},
   level: ~:2; -1; -2:...,
   {note: eb:16, sustain: [8, 14]}
 ]
